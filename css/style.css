@@ -85,6 +85,7 @@ body{
 }
 h1,h2,h3,h4{
     font-weight: var(--font-semi-bold);
+    font-family: "Poppins";
 }
 ul{
     list-style: none;
@@ -108,6 +109,9 @@ button {
 }
 .btn_up a {
     color: var(--text-color-light);
+}
+p{
+    font-family: "Roboto";
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -805,43 +809,43 @@ header .head {
 footer {
     position: relative;
     background: var(--second-color);
-    padding-top: 15rem !important;
+    padding-top: 3rem !important;
     padding-bottom: 0 !important;
     margin-top: 3rem;
     color: var(--text-color-light);
+    display: grid;
+    justify-items: center;
 }
 footer .subscripe {
-    width: 90%;
     background: var(--footer-color);
     color: var(--text-color-light);
     padding: 4rem 5rem;
     text-align: center;
     position: absolute;
-    top: -7rem;
-    left: 5%;
+    top: -5rem;
 }
 .subscripe p {
     margin-bottom: 2rem;
 }
 .subscripe .subscripe_btn {
     background: var(--first-color);
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
+    height: 45px;
 }
 footer input {
     border: none;
-    padding: 1rem;
+    padding: 0rem 1rem;
     width: 50%;
-    height: 55px;
+    height: 45px;
     background: #353535;
-    font-size: var(--normal-font-size);
 }
 
 /* Main Footer */
 .main_footer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
 }
 .main_footer .heading {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,auto);
     margin-bottom: 2rem;
 }
 .heading hr {
@@ -849,17 +853,16 @@ footer input {
     border: none;
     height: 1px;
     margin-top: 15px;
-    margin-left: -5rem;
+    width: 10rem;
 }
 .articles:nth-of-type(2) .heading hr {
-    margin-left: -8rem;
 }
 .purple {
     color: #940090;
 }
 .footing {
-    grid-template-columns: repeat(2, 1fr);
-    font-size: var(--normal-font-size);
+    grid-template-columns: repeat(2, auto);
+    font-size: 14px;
 }
 .footing a {
     color: #fff;
@@ -885,20 +888,21 @@ footer input {
 }
 .footing input {
     height: 3rem;
-    width: 250px;
+    width: 100%;
+    font-size: 14px;
+    background-color: #503d63;
 }
 .send_btn {
     padding: 13px 1rem;
     background: var(--first-color);
+    font-size: inherit;
 }
 .footing .links {
     margin-top: 2rem;
 }
 .footing .links i {
     margin-right: 1rem;
-    font-size: var(--normal-font-size);
     background: #fff;
-    padding: 10px;
     border-radius: 50%;
     cursor: pointer;
 }
