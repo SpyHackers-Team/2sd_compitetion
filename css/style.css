@@ -270,22 +270,21 @@ header .head {
 }
 .head .address h1 {
     margin-bottom: 2rem;
-    font-size: var(--h1-font-size);
+    font-size: 2.5rem;
     font-weight: var(--font-bold);
 }
 .head .address p {
     margin-bottom: 2rem;
-    font-size: var(--h3-font-size);
 }
 .four_boxes {
     grid-template-columns: repeat(4, 1fr);
-    margin: 10rem 0;
+    margin: 6rem 0 1rem;
 }
 .four_boxes .box {
     background: #fff;
     text-align: center;
-    padding: 1.3rem 2rem;
-    font-size: var(--h3-font-size);
+    padding: .5rem 1rem;
+    font-size: 22px;
     transition: .5s;
     margin-top: 10px;
 }
@@ -305,12 +304,13 @@ header .head {
 }
 /* Boxes Hover */
 .four_boxes .box:hover {
-    background: var(--second-color);
+    background: #9d3ade;;
     color: var(--text-color-light);
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,auto);
     text-align: left;
     transform: translateY(-10px);
+    lign-items: center;
 }
 .four_boxes .box:hover svg {
     fill: var(--text-color-light);
@@ -809,23 +809,31 @@ header .head {
 footer {
     position: relative;
     background: var(--second-color);
-    padding-top: 3rem !important;
+    padding-top: 1rem !important;
     padding-bottom: 0 !important;
     margin-top: 3rem;
     color: var(--text-color-light);
     display: grid;
     justify-items: center;
+    margin-top: 5rem;
 }
 footer .subscripe {
     background: var(--footer-color);
     color: var(--text-color-light);
-    padding: 4rem 5rem;
     text-align: center;
     position: absolute;
-    top: -5rem;
+    top: -6.3rem;
+    width: 73%;
+    display: grid;
+    justify-items: center;
+    padding: 1.5rem 0px;
 }
-.subscripe p {
-    margin-bottom: 2rem;
+.subscripe h1{
+    font-size: 36px;
+}
+.subscripe p{
+    margin-bottom: 1rem;
+    font-size: 16px;
 }
 .subscripe .subscripe_btn {
     background: var(--first-color);
@@ -835,12 +843,25 @@ footer .subscripe {
 footer input {
     border: none;
     padding: 0rem 1rem;
-    width: 50%;
+    width: 100%;
     height: 45px;
     background: #353535;
+    outline: none;
 }
 .input_grid{
     grid-template-columns: repeat(2,auto);
+    grid-column-gap: 0px;
+    width: 660px;
+}
+.input_grid:nth-child(1) input,
+.input_grid:nth-child(1) button{
+    height: 60px;
+}
+.input_grid:nth-child(1) button{
+    font-size: 15px;
+    margin-left: 10px;
+    width: 7rem;
+    text-align: center;
 }
 /* Main Footer */
 .main_footer {
@@ -889,15 +910,16 @@ footer input {
     width: 100%;
 }
 .footing input {
-    height: 3rem;
+    height: 45px;
     width: 100%;
     font-size: 14px;
     background-color: #503d63;
 }
 .send_btn {
-    padding: 13px 1rem;
     background: var(--first-color);
     font-size: inherit;
+    padding: 0px;
+    width: 2.5rem;
 }
 .footing .links {
     margin-top: 2rem;
@@ -907,6 +929,7 @@ footer input {
     background: #fff;
     border-radius: 50%;
     cursor: pointer;
+    padding: 10px;
 }
 .fa-facebook-f {
     padding: 10px 12px !important;
@@ -921,15 +944,20 @@ footer input {
 .fa-instagram {
     color: rgb(124, 23, 138);
 }
-
+.main_footer article:nth-child(1) .footing p:nth-child(1){
+    max-width: 235px;
+    line-height: 1.714;
+}
 /* Copy Right */
 .cpy_right {
     background: var(--footer-color);
     color: #fff;
     width: 100%;
     padding: 10px;
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: center;
+    font-size: 16px;
+    line-height: 2;
 }
 
 /* Section For Phone */
