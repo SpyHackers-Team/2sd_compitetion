@@ -839,7 +839,9 @@ footer input {
     height: 45px;
     background: #353535;
 }
-
+.input_grid{
+    grid-template-columns: repeat(2,auto);
+}
 /* Main Footer */
 .main_footer {
     grid-template-columns: repeat(3, auto);
