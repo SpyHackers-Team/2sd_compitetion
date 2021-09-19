@@ -352,11 +352,11 @@ header .head {
     padding: 10px;
     border-radius: 50%;
 }
-.info svg:nth-child(1){
+.info:nth-child(1) svg{
     background: #8c18d8;
 }
 .info h2 {
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
     margin-bottom: 2rem;
 }
 .info p {
